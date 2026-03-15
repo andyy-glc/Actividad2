@@ -7,45 +7,38 @@ public class Lote {
     private int numeroLote;
     private int numeroPiezas;
     private LocalDate fechaFabricacion;
-    private Prenda prenda;
-    private double costoProduccionLote;
-    private double montoRecuperacion;
 
-    public Lote(int numeroLote,
-                int numeroPiezas,
-                LocalDate fechaFabricacion,
-                Prenda prenda) {
-
+    public Lote(int numeroLote, int numeroPiezas, LocalDate fechaFabricacion) {
         this.numeroLote = numeroLote;
         this.numeroPiezas = numeroPiezas;
         this.fechaFabricacion = fechaFabricacion;
-        this.prenda = prenda;
-
-        this.costoProduccionLote = calcularCostoProduccionLote();
-        this.montoRecuperacion = calcularMontoRecuperacion();
     }
 
-    public double calcularCostoProduccionLote() {
-        return numeroPiezas * prenda.getCostoProduccionPorPieza();
+    public double calcularCostoProduccionLote(double costoPorPieza) {
+        return numeroPiezas * costoPorPieza;
     }
 
-    public double calcularMontoRecuperacion() {
-        double precioVentaPorPieza = prenda.getCostoProduccionPorPieza() * 1.05;
-        return numeroPiezas * precioVentaPorPieza;
+    public double calcularMontoRecuperacion(double costoPorPieza) {
+        double costoTotal = numeroPiezas * costoPorPieza;
+        return costoTotal * 1.3; // ejemplo: 30% de ganancia
     }
 
     public int getNumeroLote() {
         return numeroLote;
     }
 
+    public void setNumeroPiezas(int numeroPiezas) {
+        this.numeroPiezas = numeroPiezas;
+    }
+
+    public LocalDate getFechaFabricacion() {
+        return fechaFabricacion;
+    }
+
     @Override
     public String toString() {
-        return "Lote{" +
-                "numeroLote=" + numeroLote +
-                ", numeroPiezas=" + numeroPiezas +
-                ", fechaFabricacion=" + fechaFabricacion +
-                ", costoProduccionLote=" + costoProduccionLote +
-                ", montoRecuperacion=" + montoRecuperacion +
-                '}';
+        return "Lote #" + numeroLote +
+                ", piezas=" + numeroPiezas +
+                ", fecha=" + fechaFabricacion;
     }
 }
