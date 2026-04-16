@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94a8a464-a6e3-4aff-a30f-2188c601dc18" name="Changes" comment="Actividad 2 problema1">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/empresa/LotePorFecha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/empresa/LotePorPiezas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/empresa/PrendaPorCosto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/empresa/PrendaPorTemporada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/empresa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/empresa.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/empresa/Lote.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/empresa/Lote.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/empresa/Lote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/empresa/Lote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/empresa/Prenda.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/empresa/Prenda.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/empresa/Prenda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/empresa/Prenda.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +66,23 @@
       <option name="project" value="LOCAL" />
       <updated>1772515146678</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Actividad 2 problema1">
+      <option name="closed" value="true" />
+      <created>1773608505541</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773608505541</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Actividad 2 problema1">
+      <option name="closed" value="true" />
+      <created>1773608526765</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1773608526766</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

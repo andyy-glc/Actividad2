@@ -1,6 +1,8 @@
 package empresa;
 
-public class Prenda {
+import java.util.Objects;
+
+public class Prenda implements Comparable<Prenda> {
 
     private String modelo;
     private String tela;
@@ -14,13 +16,11 @@ public class Prenda {
 
     public Prenda(String modelo, String tela, double costoProduccionPorPieza,
                   String genero, String temporada, int limiteLotes) {
-
         this.modelo = modelo;
         this.tela = tela;
         this.costoProduccionPorPieza = costoProduccionPorPieza;
         this.genero = genero;
         this.temporada = temporada;
-
         this.limiteLotes = limiteLotes;
         this.lotes = new Lote[limiteLotes];
         this.indice = 0;
@@ -39,6 +39,10 @@ public class Prenda {
         return modelo;
     }
 
+    public double getCostoProduccionPorPieza() {
+        return costoProduccionPorPieza;
+    }
+
     public void setTela(String tela) {
         this.tela = tela;
     }
@@ -50,9 +54,30 @@ public class Prenda {
     public String getGenero() {
         return genero;
     }
-
+    public String getTemporada() {
+        return temporada;
+    }
     public void setTemporada(String temporada) {
         this.temporada = temporada;
+    }
+
+    @Override
+    public int compareTo(Prenda otra) {
+        return this.modelo.compareTo(otra.modelo);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Prenda)) return false;
+        Prenda otra = (Prenda) o;
+        return Objects.equals(this.modelo, otra.modelo) &&
+                Objects.equals(this.genero, otra.genero);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(modelo, genero);
     }
 
     @Override
